@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cia's Patissiere</title>
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4C2C2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #FFA3B8;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.navbar a.active {
+    background-color: #2F1B12;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.navbar a:hover {
+    background-color: #ff85a2;
+    transform: translateY(-2px);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 5px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #C19A6B;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Main Image */
+.logo-image {
+    width: 320px;
+    margin: 15px auto 10px;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cta a {
+    display: inline-block;
+    background-color: #2F1B12;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.cta a:hover {
+    background-color: #C19A6B;
+}
+
+/* Products */
+.products-preview {
+    text-align: center;
+    padding: 20px;
+}
+
+.products-preview h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #C19A6B;
+    padding: 12px;
+    border-radius: 12px;
+    width: 130px;
+    transition: 0.3s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2F1B12;
+    margin-top: 30px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<main>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <h1>Cia's Patissiere</h1>
+    <p>Joy in Every Bite</p>
+</div>
+
+<!-- Main Image -->
+<img src="images/main.jpeg" alt="Shop" class="logo-image">
+
+<!-- CTA (MOVED HERE) -->
+<div class="cta">
+    <a href="https://wa.me/6289537077560" target="_blank">Order Now</a>
+</div>
+
+<!-- Products -->
+<div class="products-preview">
+    <h2>Popular Treats</h2>
+
+    <div class="items">
+        <div class="item">
+            <img src="images/cake.jpg">
+            <p>Cakes</p>
+        </div>
+        <div class="item">
+            <img src="images/croissant.jpg">
+            <p>Croissants</p>
+        </div>
+        <div class="item">
+            <img src="images/cupcake.jpg">
+            <p>Cupcakes</p>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<div class="footer">
+    © 2026 Cia's Patissiere | All Rights Reserved</div>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Cia’s Patissiere</title>
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4C2C2;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    background-color: #FFA3B8;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.navbar a.active {
+    background-color: #2F1B12;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.navbar a:hover {
+    background-color: #ff85a2;
+    transform: translateY(-2px);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin: 0;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+/* CONTAINER */
+.container {
+    max-width: 850px;
+    margin: auto;
+    padding: 10px 20px 40px;
+}
+
+/* CARD */
+.card {
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    backdrop-filter: blur(4px);
+    text-align: center;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* TEXT SHADOW */
+.card p,
+.brand {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    display: block;
+    margin: 10px auto 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.02);
+}
+
+/* BRAND */
+.brand {
+    color: white;
+}
+
+/* LOCATION TEXT */
+.identity {
+    color: #2F1B12;
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.year {
+    font-weight: normal;
+    text-transform: none;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2F1B12;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="products.html">Products</a>
+</div>
+
+<!-- TITLE -->
+<div class="hero">
+    <h1>About Us</h1>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <!-- CARD 1 -->
+    <div class="card">
+        <p>
+            Welcome to <span class="brand">Cia’s Patissiere</span>! We are a small bakery dedicated to creating
+            beautiful and delicious pastries that bring joy in every bite.
+        </p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+        <img src="images/bakery.jpg" alt="Bakery">
+
+        <p class="identity">
+            <span class="year">Since 1998</span> • Batam, Indonesia
+        </p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+        <p>
+            Our passion lies in crafting high-quality desserts using the finest
+            ingredients. From soft cakes to flaky croissants, every product is made
+            with care and attention to detail.
+        </p>
+
+        <p>
+            At <span class="brand">Cia’s Patissiere</span>, we believe that food is more than just taste — it is
+            an experience. We aim to create moments of happiness through every
+            dessert we serve.
+        </p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Cia's Patissiere | All Rights Reserved</div>
+
+</body>
+</html>
