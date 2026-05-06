@@ -22,7 +22,6 @@ main {
     flex: 1;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: center;
@@ -51,7 +50,6 @@ main {
     transform: translateY(-2px);
 }
 
-/* Hero */
 .hero {
     text-align: center;
     padding: 40px 20px 10px;
@@ -81,7 +79,6 @@ main {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 
-/* Main Image */
 .logo-image {
     width: 320px;
     margin: 15px auto 10px;
@@ -90,7 +87,6 @@ main {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* CTA */
 .cta {
     text-align: center;
     margin-bottom: 20px;
@@ -111,7 +107,6 @@ main {
     background-color: #C19A6B;
 }
 
-/* Products */
 .products-preview {
     text-align: center;
     padding: 20px;
@@ -155,7 +150,6 @@ main {
     font-size: 14px;
 }
 
-/* Footer */
 .footer {
     text-align: center;
     padding: 15px;
@@ -169,53 +163,46 @@ main {
 <body>
 
 <main>
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+    </div>
 
-<!-- Navbar -->
-<div class="navbar">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-</div>
+    <div class="hero">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1>Cia's Patissiere</h1>
+        <p>Joy in Every Bite</p>
+    </div>
 
-<!-- Hero -->
-<div class="hero">
-    <img src="images/logo.png" alt="Logo" class="logo">
-    <h1>Cia's Patissiere</h1>
-    <p>Joy in Every Bite</p>
-</div>
+    <img src="images/main.jpeg" alt="Shop" class="logo-image">
 
-<!-- Main Image -->
-<img src="images/main.jpeg" alt="Shop" class="logo-image">
+    <div class="cta">
+        <a href="https://wa.me/6289537077560" target="_blank">Order Now</a>
+    </div>
 
-<!-- CTA (MOVED HERE) -->
-<div class="cta">
-    <a href="https://wa.me/6289537077560" target="_blank">Order Now</a>
-</div>
-
-<!-- Products -->
-<div class="products-preview">
-    <h2>Popular Treats</h2>
-
-    <div class="items">
-        <div class="item">
-            <img src="images/cake.jpg">
-            <p>Cakes</p>
-        </div>
-        <div class="item">
-            <img src="images/croissant.jpg">
-            <p>Croissants</p>
-        </div>
-        <div class="item">
-            <img src="images/cupcake.jpg">
-            <p>Cupcakes</p>
+    <div class="products-preview">
+        <h2>Popular Treats</h2>
+        <div class="items">
+            <div class="item">
+                <img src="images/cake.jpg" alt="Cakes">
+                <p>Cakes</p>
+            </div>
+            <div class="item">
+                <img src="images/croissant.jpg" alt="Croissants">
+                <p>Croissants</p>
+            </div>
+            <div class="item">
+                <img src="images/cupcake.jpg" alt="Cupcakes">
+                <p>Cupcakes</p>
+            </div>
         </div>
     </div>
-</div>
-
 </main>
 
 <div class="footer">
-    © 2026 Cia's Patissiere | All Rights Reserved</div>
+    © 2026 Cia's Patissiere | All Rights Reserved
+</div>
 
 </body>
 </html>

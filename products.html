@@ -18,7 +18,6 @@ body {
     color: white;
 }
 
-/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: center;
@@ -40,7 +39,6 @@ body {
     background-color: #2F1B12;
 }
 
-/* HEADER */
 .hero {
     padding: 40px 20px 10px;
 }
@@ -61,7 +59,6 @@ body {
     text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
 }
 
-/* SEARCH */
 .search-box input {
     padding: 10px 14px;
     width: 240px;
@@ -71,7 +68,6 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* CATEGORY */
 .category {
     max-width: 1200px;
     margin: auto;
@@ -82,18 +78,16 @@ body {
     font-family: 'Playfair Display', serif;
     color: white;
     margin-top: 25px;
-text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 
-/* GRID 3 COLUMN */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
 }
 
-/* ITEM */
-    .item {
+.item {
     background-color: rgba(0, 0, 0, 0.25);
     padding: 12px;
     border-radius: 14px;
@@ -107,7 +101,6 @@ text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
     transform: translateY(-6px);
 }
 
-/* IMAGE */
 .item img {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -115,7 +108,6 @@ text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
     border-radius: 12px;
 }
 
-/* TEXT SHADOW */
 .name {
     font-weight: 600;
     margin-top: 6px;
@@ -134,10 +126,8 @@ text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
     font-weight: 600;
 }
 
-/* HIDE SEARCH */
 .hidden { display: none !important; }
 
-/* FOOTER */
 .footer {
     text-align: center;
     padding: 15px;
@@ -145,7 +135,6 @@ text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
     margin-top: 40px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
     .grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -158,14 +147,12 @@ text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 
 <body>
 
-<!-- NAVBAR -->
 <div class="navbar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="products.html" class="active">Products</a>
 </div>
 
-<!-- HEADER -->
 <div class="hero">
 <div class="hero-row">
     <h1>Our Products</h1>
@@ -176,111 +163,105 @@ text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 </div>
 </div>
 
-<!-- CAKES -->
 <div class="category">
 <h2>🍰 Cakes</h2>
 <div class="grid">
 
-<div class="item"><img src="images/shortcake.jpg"><div class="name">Strawberry Shortcake</div><div class="price">Rp 45.000</div><div class="desc">Soft vanilla sponge with fresh cream & strawberries.</div></div>
+<div class="item"><img src="images/shortcake.jpg" alt="Strawberry Shortcake"><div class="name">Strawberry Shortcake</div><div class="price">Rp 45.000</div><div class="desc">Soft vanilla sponge with fresh cream & strawberries.</div></div>
 
-<div class="item"><img src="images/fudge.jpg"><div class="name">Chocolate Fudge Cake</div><div class="price">Rp 50.000</div><div class="desc">Rich chocolate layers with thick ganache.</div></div>
+<div class="item"><img src="images/fudge.jpg" alt="Chocolate Fudge Cake"><div class="name">Chocolate Fudge Cake</div><div class="price">Rp 50.000</div><div class="desc">Rich chocolate layers with thick ganache.</div></div>
 
-<div class="item"><img src="images/matcha.jpg"><div class="name">Matcha Layer Cake</div><div class="price">Rp 52.000</div><div class="desc">Earthy matcha cream with soft sponge layers.</div></div>
+<div class="item"><img src="images/matcha.jpg" alt="Matcha Layer Cake"><div class="name">Matcha Layer Cake</div><div class="price">Rp 52.000</div><div class="desc">Earthy matcha cream with soft sponge layers.</div></div>
 
-<div class="item"><img src="images/black.jpg"><div class="name">Black Forest Cake</div><div class="price">Rp 55.000</div><div class="desc">Chocolate cake with cherries & cream.</div></div>
+<div class="item"><img src="images/black.jpg" alt="Black Forest Cake"><div class="name">Black Forest Cake</div><div class="price">Rp 55.000</div><div class="desc">Chocolate cake with cherries & cream.</div></div>
 
-<div class="item"><img src="images/vanilla.jpg"><div class="name">Vanilla Berry Cake</div><div class="price">Rp 48.000</div><div class="desc">Light vanilla cake with fresh berries.</div></div>
+<div class="item"><img src="images/vanilla.jpg" alt="Vanilla Berry Cake"><div class="name">Vanilla Berry Cake</div><div class="price">Rp 48.000</div><div class="desc">Light vanilla cake with fresh berries.</div></div>
 
-<div class="item"><img src="images/caramel.jpg"><div class="name">Caramel Cream Cake</div><div class="price">Rp 50.000</div><div class="desc">Soft cake with smooth caramel finish.</div></div>
+<div class="item"><img src="images/caramel.jpg" alt="Caramel Cream Cake"><div class="name">Caramel Cream Cake</div><div class="price">Rp 50.000</div><div class="desc">Soft cake with smooth caramel finish.</div></div>
 
 </div>
 </div>
 
-<!-- PASTRIES -->
 <div class="category">
 <h2>🥐 Pastries</h2>
 <div class="grid">
 
-<div class="item"><img src="images/butter.jpg"><div class="name">Butter Croissant</div><div class="price">Rp 18.000</div><div class="desc">Golden flaky croissant baked daily.</div></div>
+<div class="item"><img src="images/butter.jpg" alt="Butter Croissant"><div class="name">Butter Croissant</div><div class="price">Rp 18.000</div><div class="desc">Golden flaky croissant baked daily.</div></div>
 
-<div class="item"><img src="images/almond.jpg"><div class="name">Almond Croissant</div><div class="price">Rp 22.000</div><div class="desc">Filled with almond cream & crunch.</div></div>
+<div class="item"><img src="images/almond.jpg" alt="Almond Croissant"><div class="name">Almond Croissant</div><div class="price">Rp 22.000</div><div class="desc">Filled with almond cream & crunch.</div></div>
 
-<div class="item"><img src="images/au.jpg"><div class="name">Pain au Chocolat</div><div class="price">Rp 20.000</div><div class="desc">Buttery pastry with chocolate core.</div></div>
+<div class="item"><img src="images/au.jpg" alt="Pain au Chocolat"><div class="name">Pain au Chocolat</div><div class="price">Rp 20.000</div><div class="desc">Buttery pastry with chocolate core.</div></div>
 
-<div class="item"><img src="images/cinnamon.jpg"><div class="name">Cinnamon Roll</div><div class="price">Rp 19.000</div><div class="desc">Soft roll with cinnamon glaze.</div></div>
+<div class="item"><img src="images/cinnamon.jpg" alt="Cinnamon Roll"><div class="name">Cinnamon Roll</div><div class="price">Rp 19.000</div><div class="desc">Soft roll with cinnamon glaze.</div></div>
 
-<div class="item"><img src="images/cheese.jpg"><div class="name">Cheese Danish</div><div class="price">Rp 21.000</div><div class="desc">Cream cheese filling with buttery crust.</div></div>
+<div class="item"><img src="images/cheese.jpg" alt="Cheese Danish"><div class="name">Cheese Danish</div><div class="price">Rp 21.000</div><div class="desc">Cream cheese filling with buttery crust.</div></div>
 
-<div class="item"><img src="images/strawberry.jpg"><div class="name">Strawberry Danish</div><div class="price">Rp 23.000</div><div class="desc">Sweet pastry with fresh strawberries.</div></div>
+<div class="item"><img src="images/strawberry.jpg" alt="Strawberry Danish"><div class="name">Strawberry Danish</div><div class="price">Rp 23.000</div><div class="desc">Sweet pastry with fresh strawberries.</div></div>
 
 </div>
 </div>
 
-<!-- CUPCAKES -->
 <div class="category">
 <h2>🧁 Cupcakes</h2>
 <div class="grid">
 
-<div class="item"><img src="images/vcup.jpg"><div class="name">Vanilla Cupcake</div><div class="price">Rp 15.000</div><div class="desc">Soft vanilla cupcake with buttercream.</div></div>
+<div class="item"><img src="images/vcup.jpg" alt="Vanilla Cupcake"><div class="name">Vanilla Cupcake</div><div class="price">Rp 15.000</div><div class="desc">Soft vanilla cupcake with buttercream.</div></div>
 
-<div class="item"><img src="images/ccup.jpg"><div class="name">Chocolate Cupcake</div><div class="price">Rp 16.000</div><div class="desc">Rich cocoa cupcake with frosting.</div></div>
+<div class="item"><img src="images/ccup.jpg" alt="Chocolate Cupcake"><div class="name">Chocolate Cupcake</div><div class="price">Rp 16.000</div><div class="desc">Rich cocoa cupcake with frosting.</div></div>
 
-<div class="item"><img src="images/rcup.jpg"><div class="name">Red Velvet Cupcake</div><div class="price">Rp 18.000</div><div class="desc">Velvety cake with cream cheese topping.</div></div>
+<div class="item"><img src="images/rcup.jpg" alt="Red Velvet Cupcake"><div class="name">Red Velvet Cupcake</div><div class="price">Rp 18.000</div><div class="desc">Velvety cake with cream cheese topping.</div></div>
 
-<div class="item"><img src="images/mcup.jpg"><div class="name">Matcha Cupcake</div><div class="price">Rp 18.000</div><div class="desc">Soft green tea flavor cupcake.</div></div>
+<div class="item"><img src="images/mcup.jpg" alt="Matcha Cupcake"><div class="name">Matcha Cupcake</div><div class="price">Rp 18.000</div><div class="desc">Soft green tea flavor cupcake.</div></div>
 
-<div class="item"><img src="images/scup.jpg"><div class="name">Strawberry Cupcake</div><div class="price">Rp 17.000</div><div class="desc">Sweet strawberry frosting cupcake.</div></div>
+<div class="item"><img src="images/scup.jpg" alt="Strawberry Cupcake"><div class="name">Strawberry Cupcake</div><div class="price">Rp 17.000</div><div class="desc">Sweet strawberry frosting cupcake.</div></div>
 
-<div class="item"><img src="images/ocup.jpg"><div class="name">Oreo Cupcake</div><div class="price">Rp 19.000</div><div class="desc">Cookies & cream cupcake with Oreo bits.</div></div>
+<div class="item"><img src="images/ocup.jpg" alt="Oreo Cupcake"><div class="name">Oreo Cupcake</div><div class="price">Rp 19.000</div><div class="desc">Cookies & cream cupcake with Oreo bits.</div></div>
 
 </div>
 </div>
 
-<!-- COOKIES -->
 <div class="category">
 <h2>🍪 Cookies</h2>
 <div class="grid">
 
-<div class="item"><img src="images/ccc.jpg"><div class="name">Chocolate Chip Cookies</div><div class="price">Rp 12.000</div><div class="desc">Chewy cookies with chocolate chips.</div></div>
+<div class="item"><img src="images/ccc.jpg" alt="Chocolate Chip Cookies"><div class="name">Chocolate Chip Cookies</div><div class="price">Rp 12.000</div><div class="desc">Chewy cookies with chocolate chips.</div></div>
 
-<div class="item"><img src="images/dcc.jpg"><div class="name">Double Chocolate Cookies</div><div class="price">Rp 14.000</div><div class="desc">Intense chocolate cookie flavor.</div></div>
+<div class="item"><img src="images/dcc.jpg" alt="Double Chocolate Cookies"><div class="name">Double Chocolate Cookies</div><div class="price">Rp 14.000</div><div class="desc">Intense chocolate cookie flavor.</div></div>
 
-<div class="item"><img src="images/mwc.jpg"><div class="name">Matcha White Chocolate</div><div class="price">Rp 15.000</div><div class="desc">Matcha cookie with white chocolate.</div></div>
+<div class="item"><img src="images/mwc.jpg" alt="Matcha White Chocolate"><div class="name">Matcha White Chocolate</div><div class="price">Rp 15.000</div><div class="desc">Matcha cookie with white chocolate.</div></div>
 
-<div class="item"><img src="images/ac.jpg"><div class="name">Almond Cookies</div><div class="price">Rp 13.000</div><div class="desc">Crunchy almond cookies.</div></div>
+<div class="item"><img src="images/ac.jpg" alt="Almond Cookies"><div class="name">Almond Cookies</div><div class="price">Rp 13.000</div><div class="desc">Crunchy almond cookies.</div></div>
 
-<div class="item"><img src="images/bc.jpg"><div class="name">Butter Cookies</div><div class="price">Rp 12.000</div><div class="desc">Classic buttery cookies.</div></div>
+<div class="item"><img src="images/bc.jpg" alt="Butter Cookies"><div class="name">Butter Cookies</div><div class="price">Rp 12.000</div><div class="desc">Classic buttery cookies.</div></div>
 
-<div class="item"><img src="images/occ.jpg"><div class="name">Oreo Crumble Cookies</div><div class="price">Rp 15.000</div><div class="desc">Cookies with Oreo crumble.</div></div>
+<div class="item"><img src="images/occ.jpg" alt="Oreo Crumble Cookies"><div class="name">Oreo Crumble Cookies</div><div class="price">Rp 15.000</div><div class="desc">Cookies with Oreo crumble.</div></div>
 
 </div>
 </div>
 
-<!-- CLASSICS -->
 <div class="category">
 <h2>🍮 Classics</h2>
 <div class="grid">
 
-<div class="item"><img src="images/tc.jpg"><div class="name">Tiramisu Cup</div><div class="price">Rp 25.000</div><div class="desc">Espresso mascarpone dessert.</div></div>
+<div class="item"><img src="images/tc.jpg" alt="Tiramisu Cup"><div class="name">Tiramisu Cup</div><div class="price">Rp 25.000</div><div class="desc">Espresso mascarpone dessert.</div></div>
 
-<div class="item"><img src="images/pc.jpg"><div class="name">Panna Cotta</div><div class="price">Rp 23.000</div><div class="desc">Smooth vanilla cream dessert.</div></div>
+<div class="item"><img src="images/pc.jpg" alt="Panna Cotta"><div class="name">Panna Cotta</div><div class="price">Rp 23.000</div><div class="desc">Smooth vanilla cream dessert.</div></div>
 
-<div class="item"><img src="images/cm.jpg"><div class="name">Chocolate Mousse</div><div class="price">Rp 24.000</div><div class="desc">Light airy chocolate mousse.</div></div>
+<div class="item"><img src="images/cm.jpg" alt="Chocolate Mousse"><div class="name">Chocolate Mousse</div><div class="price">Rp 24.000</div><div class="desc">Light airy chocolate mousse.</div></div>
 
-<div class="item"><img src="images/sp.jpg"><div class="name">Strawberry Parfait</div><div class="price">Rp 26.000</div><div class="desc">Layers of cream & strawberries.</div></div>
+<div class="item"><img src="images/sp.jpg" alt="Strawberry Parfait"><div class="name">Strawberry Parfait</div><div class="price">Rp 26.000</div><div class="desc">Layers of cream & strawberries.</div></div>
 
-<div class="item"><img src="images/lt.jpg"><div class="name">Lemon Tart</div><div class="price">Rp 22.000</div><div class="desc">Sweet tangy citrus tart.</div></div>
+<div class="item"><img src="images/lt.jpg" alt="Lemon Tart"><div class="name">Lemon Tart</div><div class="price">Rp 22.000</div><div class="desc">Sweet tangy citrus tart.</div></div>
 
-<div class="item"><img src="images/ev.jpg"><div class="name">Éclair Vanilla</div><div class="price">Rp 27.000</div><div class="desc">Choux pastry with vanilla cream.</div></div>
+<div class="item"><img src="images/ev.jpg" alt="Éclair Vanilla"><div class="name">Éclair Vanilla</div><div class="price">Rp 27.000</div><div class="desc">Choux pastry with vanilla cream.</div></div>
 
 </div>
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
- © 2026 Cia's Patissiere | All Rights Reserved</div>
+ © 2026 Cia's Patissiere | All Rights Reserved
+</div>
 
-<!-- SEARCH SCRIPT -->
 <script>
 function searchProducts() {
     let input = document.getElementById("searchInput").value.toLowerCase();
